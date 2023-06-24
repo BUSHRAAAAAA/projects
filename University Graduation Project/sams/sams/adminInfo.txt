@@ -1,0 +1,2 @@
+usernmae:admin@sams.com
+password:123456

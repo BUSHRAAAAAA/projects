@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap');
+
+body{
+    background-color: #cdcdcd;
+    font-family:  'Cairo', sans-serif;
+    text-align: start;
+}
+main{
+
+}
+main h1{
+    text-align: center;
+    color: #31776a;
+}
+main .login-form-container{
+    padding: 20px;
+    color: #ffffff;
+    background-color: #343a40;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 13px 14px 11px -2px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 13px 14px 11px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 13px 14px 11px -2px rgba(0,0,0,0.77);
+}
+main .login-form-container form{
+
+}
+main .login-form-container form label{
+    display: block;
+    width: 90%;
+    margin-right: 5%;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color:#efefef;
+}
+main .login-form-container form input{
+    background-color: #343a40;
+    border: none;
+    border-bottom: 1px solid #31776a;
+    width: 90%;
+    margin-right: 5%;
+    margin-bottom: 25px;
+    height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 50%;
+    font-family:  'Cairo', sans-serif;
+}
+main .login-form-container form button{
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 10%;
+    background-color: #31776a;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    height: 50px;
+    font-size: 24px;
+    font-family:  'Cairo', sans-serif;
+}

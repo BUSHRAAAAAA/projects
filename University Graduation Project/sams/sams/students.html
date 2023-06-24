@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+   
+    <title>الطلاب</title>
+</head>
+<body onload="readStudents();">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="brand"  href="index.html"><i class="fas fa-user-graduate"></i> SAMS</a>
+                </li>
+        </nav>
+    </header>
+    <aside>
+        <ul>
+            <li>
+                <a href="index.html">الرئيسية <i class="fas fa-home"></i></a>
+            </li>
+            <li>
+                <a href="teachers.html">المحاضرون <i class="fas fa-chalkboard-teacher"></i></a>
+            </li>
+            <li class="active">
+                <a href="students.html">الطلاب <i class="fas fa-user-graduate"></i></a>
+            </li>
+            <li>
+                <a href="subjects.html">المواد <i class="fas fa-book"></i></a>
+            </li>
+            <li>
+                <a href="add-student-to-subject.html"> إضافة طالب لمادة<i class="fas fa-users-cog"></i></a>
+            </li>
+            <li>
+                <a href="about.html">المزيد عنا <i class="fas fa-info-circle"></i></a>
+            </li>
+        </ul>
+        <img class="uoa-logo" src="imgs/uoaleppo-logo.jpg" alt="">
+
+        <button id="log-out-button" type="button" class="btn btn-light" onclick="logOut(); return false;"> <i class="fas fa-sign-out-alt"></i> تسجيل الخروج</button></a>
+
+    </aside>
+    <main>
+
+        
+    
+
+    
+
+        <div id="edit-section"></div>
+        <h1> الطلاب المُضافون</h1>
+        <br>
+        <div>
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                  <tr>
+                    <th style="width: 25%" scope="col">اسم الطالب</th>
+                    <th style="width: 25%" scope="col">الرقم الجامعي</th>
+                    <th style="width: 25%" scope="col">
+                        <select id="table-student-year-filter" class="form-control" onchange="readStudentsInSpecificYear();">
+                            <option value="none">جميع السنوات الدراسية</option>
+                            <option value="الاولى">السنة الاولى</option>
+                            <option value="الثانية">السنة الثانية</option>
+                            <option value="الثالثة">السنة الثالثة</option>
+                            <option value="الرابعة">السنة الرابعة</option>
+                            <option value="الخامسة">السنة الخامسة</option>
+                        </select>
+                    </th>
+                    <th style="width: 25%" scope="col">العمليات</th>
+                  </tr>
+                </thead>
+                <tbody id="students-table">
+                  
+                  
+                </tbody>
+            </table>
+            <br>
+            <hr>
+
+            <div class="excel-import-section">
+                <!-- Importing Excelfile to JSON and storing it in the database -->
+    
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+                <script>
+                    var ExcelToJSON = function() {
+    
+                    this.parseExcel = function(file) {
+                        var reader = new FileReader();
+    
+                        reader.onload = function(e) {
+                        var data = e.target.result;
+                        var workbook = XLSX.read(data, {
+                            type: 'binary'
+                        });
+                        workbook.SheetNames.forEach(function(sheetName) {
+                            // Here is your object
+                            var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+                            var json_object = JSON.stringify(XL_row_object);
+                            console.log(JSON.parse(json_object));
+                            
+          
+                            for(var i = 0; i <= JSON.parse(json_object).length - 1; i++ ){
+                                
+                                var student = {
+                                    name: JSON.parse(json_object)[i]['name'],
+                                    number: JSON.parse(json_object)[i]['number'],
+                                    year: JSON.parse(json_object)[i]['year']
+                                }
+    
+                                firebase.firestore().collection("students").doc( JSON.parse(json_object)[i]['number'] ).set(student).then(() => {
+                                    console.log("Student successfully added!");
+                                    swal({
+                                        title: "إضافة طلاب",
+                                        text: "تمت إضافة الطلاب بنجاح",
+                                        icon: "success",
+                                        timer: 1500,
+                                        button: false
+                                    });
+                                    document.getElementById("upload").this.reset();
+                                    document.getElementById("upload").value="";
+                                    $("#upload").val('');
+                                }).catch((error) => {
+                                    console.error("Error adding student: ", error);
+                                });
+                            }
+                        })
+                        };
+    
+                        reader.onerror = function(ex) {
+                        console.log(ex);
+                        };
+    
+                        reader.readAsBinaryString(file);
+                    };
+                };
+    
+                function handleFileSelect(evt) {
+                    
+                    var files = evt.target.files; // FileList object
+                    var xl2json = new ExcelToJSON();
+                    xl2json.parseExcel(files[0]);
+                }
+                </script>
+    
+                <h1>إضافة طلاب من ملف اكسل</h1>
+                <br>
+                <form class="form-group" enctype="multipart/form-data">
+                    <input class="form-control" style="height: 45px;" placeholder="اختر ملفاَ" id="upload" type=file  name="files[]">
+                </form>
+                <script>document.getElementById('upload').addEventListener('change', handleFileSelect, false);</script>
+            </div>
+            <br>
+            <hr>
+
+
+            <br>
+            <h1>إضافة طالب جديد</h1>
+            <br>
+            <form>
+                <div class="form-row">
+                  <div class="col-4">
+                    <input id="student-name" type="text" class="form-control" placeholder="اسم الطالب">
+                  </div>
+                  <div class="col-3">
+                    <input id="student-number" type="number" class="form-control" placeholder="رقم الطالب">
+                  </div>
+                  <div class="col-3">
+                    <select id="student-year" class="form-control">
+                        <option value="none">السنة الدراسية</option>
+                        <option value="الاولى">السنة الاولى</option>
+                        <option value="الثانية">السنة الثانية</option>
+                        <option value="الثالثة">السنة الثالثة</option>
+                        <option value="الرابعة">السنة الرابعة</option>
+                        <option value="الخامسة">السنة الخامسة</option>
+                      </select>
+                  </div>
+                  <div class="col-2">
+                    <button onclick="addStudent(); return false;" type="button" class="btn btn-primary"> <i class="fas fa-plus"></i> إضافة طالب</button>
+                  </div>
+                </div>
+            </form>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة SAMS &copy; 2021</p>
+    </footer>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    
+    <script src="js/config.js"></script>
+    <script src="js/authenticated.js"></script>
+    <script src="js/students.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    
+    <title>لوحة التحكم</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="brand"  href="index.html"><i class="fas fa-user-graduate"></i> SAMS</a>
+                </li>
+        </nav>
+    </header>
+    <aside>
+        <ul>
+            <li class="active">
+                <a href="index.html">الرئيسية <i class="fas fa-home"></i></a>
+            </li>
+            <li>
+                <a href="teachers.html">المحاضرون <i class="fas fa-chalkboard-teacher"></i></a>
+            </li>
+            <li>
+                <a href="students.html">الطلاب <i class="fas fa-user-graduate"></i></a>
+            </li>
+            <li>
+                <a href="subjects.html">المواد <i class="fas fa-book"></i></a>
+            </li>
+            <li>
+                <a href="add-student-to-subject.html"> إضافة طالب لمادة <i class="fas fa-users-cog"></i></a>
+            </li>
+            <li>
+                <a href="about.html">المزيد عنا <i class="fas fa-info-circle"></i></a>
+            </li>
+        </ul>
+        <img class="uoa-logo" src="imgs/uoaleppo-logo.jpg" alt="">
+
+        <button id="log-out-button" type="button" class="btn btn-light" onclick="logOut(); return false;"> <i class="fas fa-sign-out-alt"></i> تسجيل الخروج</button></a>
+
+    </aside>
+    <main>
+        <h1>أهلا بكم في SAMS </h1>
+        <p>نظام مراقبة وتسجيل حضور الطلاب</p>
+        
+        <div class="row">
+            <div class="col-md-4 add-icon">
+                <a href="teachers.html"><i class="fas fa-chalkboard-teacher"></i></a>
+                <p>إضافة محاضر</p>
+                <span id="teachers-count"></span>
+            </div>
+            <div class="col-md-4 add-icon">
+                <a href="students.html"><i class="fas fa-user-plus"></i></a>
+                <p>إضافة طالب</p>
+                <span id="students-count"></span>
+            </div>
+            <div class="col-md-4 add-icon">
+                <a href="subjects.html"><i class="fas fa-book"></i></a>
+                <p>إضافة مادة</p>
+                <span id="subjects-count"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة SAMS &copy; 2021</p>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/authenticated.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/dashboard.js"></script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

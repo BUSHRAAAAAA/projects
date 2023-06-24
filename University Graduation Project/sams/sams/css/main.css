@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: start;
+}
+body{
+    background-color: #efefef;
+}
+header
+{
+    position: fixed;
+}
+header nav ul li{list-style: none;}
+header nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    width: 120px;
+    height: 75px;
+    background-color: #31776a;
+    border-radius: 50%;
+    line-height: 70px;
+    font-size: 26px;
+    text-align: center;
+    transition: .3s;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: #31776a;
+    background-color: #343a40;;
+}
+aside{
+    position: fixed;
+    width: 15%;
+    background-color: #343a40;
+    height: 100vh;
+    float: right;
+    margin: 0;
+    margin-top: 0px;
+}
+aside ul{
+    width: 100%;
+    display: block;
+    padding: 0;
+    
+}
+aside ul li{
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    list-style: none;
+    border-bottom: 1px solid #444;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 60px;
+    display: block;
+}
+
+aside ul li:hover{
+    background-color: #31776a;
+    transition: .4s;
+}
+aside ul li.active{
+    background-color: #31776a
+}
+aside ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+aside ul li a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+aside .uoa-logo{
+    opacity: 30%;
+    border-radius: 50%;
+    width: 80%;
+    margin: 10%;
+    position: relative;
+    transition: .3s;
+}
+aside .uoa-logo:hover{
+    opacity: 50%;
+}
+#log-out-button{
+    position: relative;
+    display: block;
+    right: 16%;
+    bottom: -30px;
+    background-color: #31776a;
+    color: #fefefe;
+}
+main{
+    margin: 0;
+    margin-right: 15%;
+    width: 85%;
+    background-color: #efefef;
+    min-height: 81vh;
+    float: right;
+    padding: 50px;
+    padding-top: 100px;
+}
+main h1, main p{
+    text-align: center;
+    font-weight: lighter;
+}
+main .add-icon{
+    font-size: 100px;
+    text-align: center;
+    
+}
+main .add-icon a{
+    text-decoration: none;
+    color: #31776a;
+}
+main .add-icon a:hover{
+    text-decoration: none;
+    color: #004236;
+    transition: .4s;
+    transition-timing-function: ease;
+}
+main .add-icon p{
+    font-size: 30px;
+}
+
+footer{
+    margin-right: 15%;
+}
+footer p{
+    clear: both;
+    text-align: center;
+    color: #222222;
+    background-color: #efefef;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.bg-fav{
+    background-color: #31776a;;
+}
+main .row label{
+    margin-right: 30px;
+}
+.student-container{
+    border: 1px solid #444;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+#table-student-year-filter, #table-subjects-year-filter{
+    border: 1px solid #fefefe;
+    background-color: #343a40;
+    color: #fff;
+    margin-bottom: -5px;
+}
