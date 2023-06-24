@@ -1,0 +1,17 @@
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\bin\Debug\net7.0\cars_store_Datalayer.deps.json
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\bin\Debug\net7.0\cars_store_Datalayer.runtimeconfig.json
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\bin\Debug\net7.0\cars_store_Datalayer.dll
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\bin\Debug\net7.0\cars_store_Datalayer.pdb
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\bin\Debug\net7.0\cars_store_Domain.dll
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\bin\Debug\net7.0\cars_store_Domain.pdb
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.csproj.AssemblyReference.cache
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.AssemblyInfoInputs.cache
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.AssemblyInfo.cs
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.csproj.CoreCompileInputs.cache
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.csproj.CopyComplete
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.dll
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\refint\cars_store_Datalayer.dll
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.pdb
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\cars_store_Datalayer.genruntimeconfig.cache
+C:\Users\bushra\source\repos\HomeWork4\cars_store_Datalayer\obj\Debug\net7.0\ref\cars_store_Datalayer.dll

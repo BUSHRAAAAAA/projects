@@ -1,0 +1,9 @@
+c:\users\bushra\documents\visual studio 2012\Projects\homework4\homework4\bin\Debug\homework4.exe.config
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\bin\Debug\homework4.exe
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\bin\Debug\homework4.pdb
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\obj\Debug\homework4.csprojResolveAssemblyReference.cache
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\obj\Debug\homework4.Form1.resources
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\obj\Debug\homework4.Properties.Resources.resources
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\obj\Debug\homework4.csproj.GenerateResource.Cache
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\obj\Debug\homework4.exe
+c:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework4\homework4\obj\Debug\homework4.pdb

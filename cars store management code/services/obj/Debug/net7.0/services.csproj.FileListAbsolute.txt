@@ -1,0 +1,17 @@
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.csproj.AssemblyReference.cache
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.AssemblyInfoInputs.cache
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.AssemblyInfo.cs
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.csproj.CoreCompileInputs.cache
+C:\Users\bushra\source\repos\HomeWork4\services\bin\Debug\net7.0\services.deps.json
+C:\Users\bushra\source\repos\HomeWork4\services\bin\Debug\net7.0\services.dll
+C:\Users\bushra\source\repos\HomeWork4\services\bin\Debug\net7.0\services.pdb
+C:\Users\bushra\source\repos\HomeWork4\services\bin\Debug\net7.0\cars_store_Datalayer.dll
+C:\Users\bushra\source\repos\HomeWork4\services\bin\Debug\net7.0\cars_store_Domain.dll
+C:\Users\bushra\source\repos\HomeWork4\services\bin\Debug\net7.0\cars_store_Datalayer.pdb
+C:\Users\bushra\source\repos\HomeWork4\services\bin\Debug\net7.0\cars_store_Domain.pdb
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.csproj.CopyComplete
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.dll
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\refint\services.dll
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\services.pdb
+C:\Users\bushra\source\repos\HomeWork4\services\obj\Debug\net7.0\ref\services.dll

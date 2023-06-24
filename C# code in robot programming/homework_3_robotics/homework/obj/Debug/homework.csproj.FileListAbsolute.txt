@@ -1,0 +1,10 @@
+c:\users\bushra\documents\visual studio 2012\Projects\homework\homework\bin\Debug\homework.exe.config
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\bin\Debug\homework.exe.config
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\bin\Debug\homework.exe
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\bin\Debug\homework.pdb
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\obj\Debug\homework.csprojResolveAssemblyReference.cache
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\obj\Debug\homework.Form1.resources
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\obj\Debug\homework.Properties.Resources.resources
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\obj\Debug\homework.csproj.GenerateResource.Cache
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\obj\Debug\homework.exe
+C:\Users\Bushra\Documents\Visual Studio 2012\Projects\homework_3_robotics\homework\obj\Debug\homework.pdb
